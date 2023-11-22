@@ -172,6 +172,7 @@ const advice = () => {
       setTieScore(tieScore + 1)
       setWinnershow("block");
       setSpan("none")
+      localStorage.setItem("tiescore", tieScore + 1);
       
     }
 }
