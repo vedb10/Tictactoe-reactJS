@@ -212,7 +212,7 @@ function boardreset(){
             </div>
           </div>
           </div>
-            <div className="titlebar">
+            <div className="titlebar1">
                 <div className='titleimage'  >
                 <img src={xLogo} alt='xlogo'/>
                 <img src={oLogo} alt='ologo'/>
