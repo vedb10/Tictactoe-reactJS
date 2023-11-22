@@ -163,6 +163,8 @@ const advice = () => {
     if (winner) {
       setTitle(`${winner} WON !`);
       winner === "YOU" ? setUserScore(userScore + 1) : setCpuScore(cpuScore + 1)
+      localStorage.setItem("userscore", userScore + (winner === "YOU" ? 1 : 0));
+      localStorage.setItem("cpuscore", cpuScore + (winner === "CPU" ? 1 : 0));
       setWinnershow("block");
       
     } else if (arr.every(item => item !== null)) {
