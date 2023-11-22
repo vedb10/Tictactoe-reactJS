@@ -17,17 +17,17 @@ const [winline, setWinline] = useState("")
 const [winnershow,setWinnershow] = useState("none")
 const [span,setSpan] = useState("block")
 const [userScore, setUserScore] = useState(() => {
-  const storedUserScore = localStorage.getItem("userscore");
+  let storedUserScore = localStorage.getItem("userscore");
   return storedUserScore ? parseInt(storedUserScore, 10) : 0;
 });
 
 const [tieScore, setTieScore] = useState(() => {
-  const storedTieScore = localStorage.getItem("tiescore");
+  let storedTieScore = localStorage.getItem("tiescore");
   return storedTieScore ? parseInt(storedTieScore, 10) : 0;
 });
 
 const [cpuScore, setCpuScore] = useState(() => {
-  const storedCpuScore = localStorage.getItem("cpuscore");
+  let storedCpuScore = localStorage.getItem("cpuscore");
   return storedCpuScore ? parseInt(storedCpuScore, 10) : 0;
 });
 
