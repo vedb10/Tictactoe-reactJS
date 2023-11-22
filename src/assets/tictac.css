@@ -75,6 +75,15 @@
     display: flex;
     width: 318px;
     justify-content: center;
+    align-items: center;
+
+
+}
+.titlebar1{
+    display: flex;
+    width: 318px;
+    justify-content: space-between;
+    align-items: center;
 
 
 }
